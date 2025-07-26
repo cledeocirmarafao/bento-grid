@@ -1,0 +1,229 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Dm Sans", sans-serif;
+  height: 100vh;
+  background-color: rgb(223, 224, 224);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "content-itens media-faster media-faster post-timing"
+    "content-itens accounts-maintain accounts-maintain post-timing"
+    "content-itens audience followers-content followers-content";
+  margin: 1rem;
+  column-gap: 2rem;
+  max-width: 1200px;
+}
+
+.container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+img {
+  width: 15rem;
+}
+
+.container .flex-row {
+  flex-direction: row;
+}
+
+.container .content-itens {
+  grid-area: content-itens;
+  gap: 1rem;
+}
+
+.container .content-itens .content-quicker {
+  background-color: var(--ligth-yellow);
+  justify-content: center;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding: 3rem;
+  min-height: 40rem;
+}
+
+.container .content-itens .content-quicker h2 {
+  font-weight: 400;
+  padding: 2rem;
+}
+
+.container .content-itens .content-quicker span {
+  color: var(--purple);
+  font-style: italic;
+}
+
+.container .content-itens .content-ai {
+  background-color: var(--bright-yellow);
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 1rem;
+  padding: 3.7rem;
+  align-items: flex-start;
+}
+
+.container .content-itens .content-ai h2 {
+  font-weight: 400;
+}
+
+.container .content-itens .content-ai img {
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.container .media-faster {
+  grid-area: media-faster;
+  background-color: var(--purple);
+  justify-content: center;
+}
+
+.container .media-faster h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 5.5rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.container .media-faster .highlight {
+  color: var(--bright-yellow);
+}
+
+.container .media-faster .italic {
+  font-style: italic;
+}
+
+.container .media-faster .stars-reviews {
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.container .media-faster .stars-reviews p {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+
+.container .accounts-maintain {
+  grid-area: accounts-maintain;
+}
+
+.container .accounts-maintain .platforms {
+  background-color: hsl(0, 0%, 100%);
+  height: 87%;
+  position: relative;
+  overflow: hidden;
+  width: 120%;
+}
+
+.container .accounts-maintain .platforms .icons-platform {
+  width: 115%;
+  position: absolute;
+  top: 0;
+  transform: translate(20%);
+}
+
+.container .accounts-maintain .platforms h2 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  padding: 6.8rem 6.8rem 6.8rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: -4rem;
+}
+
+.container .accounts-maintain .maintain-post {
+  background-color: var(--bright-yellow);
+  margin-left: 2rem;
+  height: 87%;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  font-size: 2rem;
+  padding: 1.5rem 3.5rem 3.5rem 3.5rem;
+}
+
+.container .accounts-maintain .maintain-post h2 {
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.container .accounts-maintain .maintain-post .overlay {
+  width: 80%;
+  position: absolute;
+  transform: translateY(-40%);
+}
+
+.container .audience {
+  grid-area: audience;
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  align-items: start;
+  padding-left: 6.5rem;
+}
+
+.container .audience h2 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.container .followers-content {
+  grid-area: followers-content;
+  background-color: var(--purple);
+  color: hsl(0, 0%, 100%);
+  padding: 0 0 0 2rem;
+  width: 90%;
+  height: 95%;
+}
+
+.container .followers-content h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.container .post-timing {
+  grid-area: post-timing;
+  background-color: var(--faint-purple);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+
+.container .post-timing h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 3rem 1rem 0 4rem;
+  margin-bottom: -2rem;
+}
+
+.container .post-timing img {
+  height: 55%;
+  width: 100%;
+  position: absolute;
+  transform: translate(36%);
+  translate: 0 33%;
+}
+
+.container .post-timing p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0 3rem 0 4rem;
+  margin-bottom: 6rem;
+}
